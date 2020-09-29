@@ -1,0 +1,23 @@
+{
+  "name": "reading-time-cli",
+  "version": "1.0.0",
+  "description": "CLI tool to run reading-time by from https://github.com/ngryman/reading-time",
+  "main": "reading-time.js",
+  "dependencies": {
+    "reading-time": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caitlinelfring/reading-time-cli.git"
+  },
+  "author": "Caitlin Elfring (@caitlinelfring)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caitlinelfring/reading-time-cli/issues"
+  },
+  "homepage": "https://github.com/caitlinelfring/reading-time-cli#readme"
+}
