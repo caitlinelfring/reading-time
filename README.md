@@ -1,5 +1,8 @@
 # Reading-time CLI
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/celfring/reading-time)](https://hub.docker.com/repository/docker/celfring/reading-time)
+[![Docker Image Size (tag)](https://img.shields.io/docker/image-size/celfring/reading-time/latest)](https://hub.docker.com/repository/docker/celfring/reading-time)
+
 CLI tool for "Medium-like reading time estimation" using <https://github.com/ngryman/reading-time> reading time library.
 
 You can run this using either [Docker](https://www.docker.com/) or [Node.js](https://nodejs.org/).
@@ -7,24 +10,23 @@ You can run this using either [Docker](https://www.docker.com/) or [Node.js](htt
 ## Docker
 
 ```bash
-# Build docker image
-docker build -t reading-time .
-
 # Run from file with stdin
-cat file.txt | docker run --rm -i reading-time --
+cat file.txt | docker run --rm -i celfring/reading-time --
 
 # Run from file
-docker run --rm -i -v $(pwd)/file.txt:/file.txt reading-time /file.txt
+docker run --rm -i -v $(pwd)/file.txt:/file.txt celfring/reading-time /file.txt
 
 # Run from clipboard
-pbpaste | docker run --rm -i reading-time --
+pbpaste | docker run --rm -i celfring/reading-time --
 ```
 
 ## Node
 
+(This assumes you are using a supported node version)
+
 ```bash
-# Build docker image
-docker build -t reading-time .
+# Install node modules
+npm install
 
 # Run from file with stdin
 cat file.txt | node reading-time.js --
